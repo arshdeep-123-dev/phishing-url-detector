@@ -1,0 +1,134 @@
+body {
+    background: #0f172a;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 40px;
+}
+
+.container {
+    background: #1e293b;
+    padding: 40px;
+    border-radius: 15px;
+    width: 500px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+input {
+    width: 80%;
+    padding: 12px;
+    margin: 20px;
+}
+
+button {
+    padding: 12px 20px;
+    background: #22c55e;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.safe {
+    color: #22c55e;
+}
+
+.suspicious {
+    color: red;
+}
+
+.risk-container{
+    width:100%;
+    margin:15px 0;
+}
+
+.risk-bar{
+    width:100%;
+    height:20px;
+    background:#333;
+    border-radius:10px;
+    overflow:hidden;
+}
+
+.risk-fill{
+    height:100%;
+    background:red;
+    transition:width 1s ease;
+}
+
+.scanner{
+    color:#00ff88;
+    animation:blink 1s infinite;
+}
+
+@keyframes blink{
+    50%{
+        opacity:0.3;
+    }
+}
+
+.page{
+    max-width: 1000px;
+    margin: auto;
+}
+
+.history-section{
+    margin-top: 40px;
+}
+
+#historyTable{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+#historyTable th,
+#historyTable td{
+    border: 1px solid #334155;
+    padding: 12px;
+    text-align: center;
+}
+
+#historyTable th{
+    background: #1e293b;
+}
+
+.download-btn{
+    display: inline-block;
+    margin-top: 20px;
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+}
+
+.download-btn:hover{
+    background: #1d4ed8;
+}
+
+#result ul{
+    text-align:left;
+    display:inline-block;
+}
+
+.stats-container{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+    margin:30px 0;
+}
+
+.stat-card{
+    flex:1;
+    min-width:180px;
+    background:#1e293b;
+    padding:20px;
+    border-radius:12px;
+    text-align:center;
+}
+
+.stat-card h3{
+    font-size:30px;
+    color:#22c55e;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Phishing URL Detector</title>
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="page">
+
+    <div class="container">
+        <h1>Phishing URL Detector</h1>
+
+        <input type="text"
+               id="urlInput"
+               placeholder="Enter URL">
+
+        <button onclick="checkURL()">
+            Check
+        </button>
+
+        <div id="result"></div>
+    </div>
+
+    <div class="stats-container">
+
+        <div class="stat-card">
+            <h3 id="totalScans">0</h3>
+            <p>Total Scans</p>
+        </div>
+
+        <div class="stat-card">
+            <h3 id="safeUrls">0</h3>
+            <p>Safe URLs</p>
+        </div>
+
+        <div class="stat-card">
+            <h3 id="suspiciousUrls">0</h3>
+            <p>Suspicious URLs</p>
+        </div>
+
+        <div class="stat-card">
+            <h3 id="avgRisk">0%</h3>
+            <p>Average Risk</p>
+        </div>
+
+    </div>
+
+    <div class="history-section">
+
+        <h2>Scan History</h2>
+
+        <table id="historyTable">
+            <thead>
+                <tr>
+                    <th>URL</th>
+                    <th>Status</th>
+                    <th>Risk</th>
+                </tr>
+            </thead>
+
+            <tbody>
+            </tbody>
+        </table>
+
+        <a class="download-btn" href="/download">
+            Download Report
+        </a>
+
+    </div>
+
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
