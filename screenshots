@@ -1,0 +1,12 @@
+Take screenshots of:
+Home page
+Safe result
+Suspicious result
+Dashboard
+PDF report
+
+
+
+git add .
+git commit -m "Added README and screenshots"
+git push

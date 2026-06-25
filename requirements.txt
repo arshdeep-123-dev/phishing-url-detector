@@ -2,7 +2,6 @@ Flask
 gunicorn
 reportlab
 
-if gunicorn is missing, add it:
-git add .
+
 git commit -m "Added gunicorn for deployment"
 git push
