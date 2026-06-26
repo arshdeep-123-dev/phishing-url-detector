@@ -101,8 +101,6 @@ http://127.0.0.1:5000
 
 ## Screenshots
 
-Add screenshots of:
-
 * Home Page
 * Safe URL Detection
 * Suspicious URL Detection
